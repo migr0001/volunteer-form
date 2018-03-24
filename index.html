@@ -10,7 +10,189 @@
 </head>
 <body>
 
+  <section class="island-1-2">
+    <div>
+      Volunteer Sign-up
+      <h1>Apply to be a tree planter</h1>
+      <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    </div>
+    <form method="POST" action="http://formspree.io/">
+      <h2>Personal details</h2>
+      <div>
+        <label id="name">Full name</label>
+        <input id="name" name="name" required>
+        <p class="italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+      </div>
 
+      <div>
+        <label id="call">What should we call you?</label>
+        <input id="call" name="call" required>
+        <p class="italic">What all your friends call you, e.g. “Liz”.</p>
+      </div>
+
+      <div>
+        <label id="birth">Date of birth</label>
+        <input id="email" type="email" placeholder="yyyy-mm-dd" name="email" required>
+      </div>
+
+      <div>
+        <label for="shirt">T-shirt size</label>
+        <select id="shirt" name="_shirt">
+          <option>Select a t-shirt size</option>
+          <option>Fitted: XS</option>
+          <option>Fitted: S</option>
+          <option>Fitted: M</option>
+          <option>Fitted: L</option>
+          <option>Fitted: XL</option>
+          <option>Straight-cut: XS</option>
+          <option>Straight-cut: S</option>
+          <option>Straight-cut: M</option>
+          <option>Straight-cut: L</option>
+          <option>Straight-cut: XL</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" required>
+        <label for="phone">Phone number <i class="green">(optional)</i></label>
+        <input id="phone" name="phone" required>
+      </div>
+
+        <h2>Address</h2>
+      <div>
+        <label for="address">Street address</label>
+        <input id="address" name="address" required>
+        <label for="city">City<label>
+        <input id="city" name="city" required>
+      </div>
+
+      <div>
+        <label for="province">Province</label>
+        <select id="province" name="_province">
+          <option>Select a province</option>
+          <option>Alberta</option>
+          <option>British Columbia</option>
+          <option>Manitoba</option>
+          <option>New Brunswick</option>
+          <option>Newfoundland & Labrador</option>
+          <option>Northwest Territories</option>
+          <option>Nova Scotia</option>
+          <option>Nunavut</option>
+          <option>Ontario</option>
+          <option>Prince Edward Island</option>
+          <option>Québec</option>
+          <option>Saskatchewan</option>
+          <option>Yukon</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="code">Postal code</label>
+        <input id="code" name="code" required>
+      </div>
+
+      <div>
+        <h2>What activities are you interested in helping with?</h2>
+        <input id="holes" type="checkbox">
+        <label for="holes">Digging holes</label>
+
+        <input id="dirty" type="checkbox">
+        <label for="dirty">Getting dirty</label>
+
+        <input id="objects" type="checkbox">
+        <label for="objects">Lifting heavy objects</label>
+
+        <input id="driving" type="checkbox">
+        <label for="driving">Driving people</label>
+
+        <input id="transport" type="checkbox">
+        <label for="transport">Transporting trees</label>
+
+        <input id="people" type="checkbox">
+        <label for="people">Taking photos</label>
+
+        <input id="publish" type="checkbox">
+        <label for="publish">Online publishing</label>
+
+        <input id="manage" type="checkbox">
+        <label for="manage">Managing people</label>
+        </input>
+      </div>
+
+      <div>
+        <h2>Do you have any experience with the following?</h2>
+        <input id="shovels" type="checkbox">
+        <label for="shovels">Shovels</label>
+
+        <input id="gps" type="checkbox">
+        <label for="gps">Hand-held GPS</label>
+
+        <input id="writing" type="checkbox">
+        <label for="writing">Writing & blogging</label>
+
+        <input id="photo" type="checkbox">
+        <label for="photo">Photography</label>
+
+        <input id="climb" type="checkbox">
+        <label for="climb">Trail & hill climbing</label>
+
+        <input id="atv" type="checkbox">
+        <label for="atv">ATVs</label>
+
+        <input id="plant" type="checkbox">
+        <label for="plant">Plant identification</label>
+
+        <input id="special" type="checkbox">
+        <label for="special">Special event planning</label>
+
+        <input id="speak" type="checkbox">
+        <label for="speak">Speaking to groups</label>
+      </div>
+
+      <fieldset>
+      </legend>Do you have a valid driver’s license?</legend>
+        <input id="yes" type="radio" name="radio">
+        <label for="yes">Yes<label>
+
+        <input id="no" type="radio" name="radio">
+        <label for="no">no<label>
+      </fieldset>
+
+      <fieldset>
+      </legend>Do you have a pick-up truck you’d be willing to use?</legend>
+        <input id="yes" type="radio" name="radio">
+        <label for="yes">Yes<label>
+
+        <input id="no" type="radio" name="radio">
+        <label for="no">no<label>
+      </fieldset>
+
+      <fieldset>
+      </legend>Do you have up-to-date first-aid certification?</legend>
+        <input id="yes" type="radio" name="radio">
+        <label for="yes">Yes<label>
+
+        <input id="no" type="radio" name="radio">
+        <label for="no">no<label>
+      </fieldset>
+
+      <div>
+        <label for="comment">Please let us know any comments or questions you may have.</label>
+        <input id="comment" name="comment" required>
+      </div>
+
+      <div>
+        <button class="apply" type="submit">Apply</button>
+      </div>
+
+      <footer class="island text-center">
+        © Tree Hugger International Organization
+      </footer>
+
+
+    </form>
+  </section>
 
 </body>
 </html>

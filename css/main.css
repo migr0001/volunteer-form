@@ -1,7 +1,6 @@
-body {
-  margin: 0;
+html {
+  font-family: "Noto Serif";
 }
-
 
 .green {
   color: #70ad55;
@@ -12,12 +11,26 @@ footer {
   color: #fff;
 }
 
-.apply {
+.btn {
   background-color: #6e8c62;
   color: #fff;
+  border-color: #6e8c62;
 }
 
 .top {
   background-color: #70ad55;
   color: #fff;
+}
+
+.border {
+  border-bottom: solid;
+  border-color: #70ad55;
+}
+
+fieldset {
+  border-color: #70ad55;
+}
+
+.comment {
+  height: 10em;
 }

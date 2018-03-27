@@ -12,15 +12,13 @@
 </head>
 <body>
 
-  <section class="grid wrapper">
+  <section class="wrapper">
     <header class="top unit xs-1 s-1 m-1 l-1 island-1-2 bold">
       <h1 class="push-1-2 pad-t-1-2">Apply to be a tree planter</h1>
       <p class="mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
     </header>
-
-    <form class="unit xs-1 s-1 m-1 l-1 island-1-2" method="POST" action="http://formspree.io/">
-
-      <h2 class="unit xs-1 s-1 m-1 l-1 pad-t-2 bold kilo">Personal details</h2>
+    <form class="grid island-1-2" method="POST" action="http://formspree.io/">
+      <h2 class="unit xs-1 s-1 m-1 l-1 pad-t-2 bold giga">Personal details</h2>
 
       <div class="unit xs-1 s-1 m-1-2 l-1-2">
         <label for="name">Full name</label>
@@ -30,12 +28,12 @@
 
       <div class="unit xs-1 s-1 m-1-2 l-1-2">
         <label for="call">What should we call you?</label>
-        <input class="border" id="call" name="call" required>
+        <input class="border" id="call" type="tel" required>
         <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
       </div>
 
       <div class="unit xs-1 s-1 m-1-2 l-1-2 pad-b-1-2">
-        <label for="dob">Date of birth</label>
+        <label id="birth" for="dob">Date of birth</label>
         <input class="border" id="dob" type="date" name="email" required>
       </div>
 
@@ -63,10 +61,10 @@
 
       <div class="unit xs-1 s-1 m-1-2 l-1-2 pad-b-2 milli pad-t-1-2">
         <label for="phone">Phone number <i class="green">(optional)</i></label>
-        <input class="border" id="phone" type="tel" required>
+        <input class="border" id="phone" name="phone" required>
       </div>
 
-      <hr>
+      <hr class="unit">
 
       <h2 class="unit xs-1 s-1 m-1 l-1 pad-t-2 pad-b-1-4 tera bold push-0">Address</h2>
       <div class="unit xs-1 s-1 m-1-2 l-1-2 pad-t-2 milli">
@@ -81,7 +79,7 @@
       <div class="unit xs-1 s-1 m-1-2 l-1-2">
         <label class="pad-t-2 milli" for="province">Province</label>
         <select class="border" id="province" name="_province">
-          <option value="">Select a province</option>
+          <option>Select a province</option>
           <option>Alberta</option>
           <option>British Columbia</option>
           <option>Manitoba</option>
@@ -186,12 +184,14 @@
         <label for="special">Special event planning</label>
       </div>
 
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 pad-b-1-4">
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 pad-b-2">
         <input id="speak" type="checkbox">
         <label for="speak">Speaking to groups</label>
       </div>
 
-      <fieldset>
+      <hr class="unit">
+
+      <fieldset class="unit pad-t-2">
         <legend class="unit xs-1 s-1 m-1 l-1 giga pad-t-2">Do you have a valid driver’s license?</legend>
         <input id="yes" type="radio" name="radio">
         <label class="unit island" for="yes">Yes</label>
@@ -200,8 +200,17 @@
         <label class="unit island" for="no">no</label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="unit">
         <legend class="unit xs-1 s-1 m-1 l-1 giga">Do you have a pick-up truck you’d be willing to use?</legend>
+        <input id="si" type="radio" name="radio">
+        <label class="unit island" for="si">Yes</label>
+
+        <input id="dili" type="radio" name="radio">
+        <label class="unit island" for="dili">no</label>
+      </fieldset>
+
+      <fieldset class="unit">
+        <legend class="unit xs-1 s-1 m-1 l-1 giga">Do you have up-to-date first-aid certification?</legend>
         <input id="oo" type="radio" name="radio">
         <label class="unit island" for="oo">Yes</label>
 
@@ -209,21 +218,12 @@
         <label class="unit island" for="hindi">no</label>
       </fieldset>
 
-      <fieldset>
-        <legend class="unit xs-1 s-1 m-1 l-1 giga">Do you have up-to-date first-aid certification?</legend>
-        <input id="ne" type="radio" name="radio">
-        <label class="unit island" for="ne">Yes</label>
-
-        <input id="anya" type="radio" name="radio">
-        <label class="unit island" for="anya">no</label>
-      </fieldset>
-
       <div class="unit xs-1 s-1 m-1 l-1 pad-t-2 giga not-bold border">
         <label for="comment">Please let us know any comments or questions you may have. <i class="green">(optional)</i></label>
         <textarea class="comment push-2 border" id="comment" name="comment" required></textarea>
       </div>
 
-      <div class="text-center push-2 pad-t-2">
+      <div class="unit text-center push-2 pad-t-2">
         <button class="btn mega" type="submit">Apply</button>
       </div>
 
